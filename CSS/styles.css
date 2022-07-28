@@ -158,6 +158,20 @@ img {
 
 .active-page {
   color: var(--acc-col);
+  position: relative;
+}
+
+.active-page::after {
+  display: block;
+  position: absolute;
+  bottom: -32px;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--acc-col);
+  border-radius: 2px;
+  content: "";
 }
 
 .nav {
