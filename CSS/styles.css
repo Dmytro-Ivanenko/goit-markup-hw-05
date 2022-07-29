@@ -24,6 +24,7 @@ font-family: 'Roboto', sans-serif;
 :root {
   --m-bcg-col: #fff;
   --alt-bcg-col: #f5f4fa;
+  --whatwedo-bcg-col: rgba(47, 48, 58, 0.8);
   --f-bcg-col: #2f303a;
   --m-col: #212121;
   --alt-col: #757575;
@@ -311,6 +312,29 @@ img {
   margin-right: 30px;
 }
 
+.services-item {
+  position: relative;
+}
+
+.services-descr-box {
+  width: 100%;
+  height: 70px;
+  padding: 27px 0;
+  position: absolute;
+  bottom: 0;
+
+  pointer-events: none;
+
+  color: var(--hero-col);
+  background-color: var(--whatwedo-bcg-col);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
 /* Staff */
 .staff {
   background-color: var(--alt-bcg-col);
@@ -559,4 +583,15 @@ img {
   font-size: 16px;
   line-height: 1.88;
   color: var(--alt-col);
+}
+
+/* ---- Animations ---- */
+
+.link,
+.hero-btn,
+.filter-item,
+.example-item {
+  transition-property: color, background-color, box-shadow, fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
